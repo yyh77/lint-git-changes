@@ -1,6 +1,6 @@
 {
   "name": "lint-git-changes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run eslint on changed files in your git repo, before git commit",
   "author": "yyh77 <uv_yyh@163.com>",
   "scripts": {
