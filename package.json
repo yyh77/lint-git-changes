@@ -1,7 +1,7 @@
 {
-  "name": "eslint-git-changes",
+  "name": "lint-git-changes",
   "version": "0.1.0",
-  "description": "a lightweight module which used for linting changed files, before git commit",
+  "description": "Run eslint on changed files in your git repo, before git commit",
   "author": "yyh77 <uv_yyh@163.com>",
   "scripts": {
     "lint-changes": "node lib/test.js"
