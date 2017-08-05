@@ -24,7 +24,7 @@ It should be used as a script with [pre-commit](https://github.com/observing/pre
 
 #### Options
 
-- `ext` - {String|Array\<string\>}. Configure which files of types will be lint. Default: `"js"`.
+- `ext` - {String | Array\<string\>}. Files which matched the configured extensions will be lint. Default: `"js"`.
 
 #### Example
 
