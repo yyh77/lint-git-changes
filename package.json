@@ -1,0 +1,31 @@
+{
+  "name": "eslint-git-changes",
+  "version": "0.1.0",
+  "description": "a lightweight module which used for linting changed files, before git commit",
+  "author": "yyh77 <uv_yyh@163.com>",
+  "scripts": {
+    "lint-changes": "node lib/test.js"
+  },
+  "pre-commit": {
+    "run": "lint-changes",
+    "silent": true
+  },
+  "peerDependencies": {
+    "eslint": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "chalk": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=6.4.0"
+  }
+}
