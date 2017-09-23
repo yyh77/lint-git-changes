@@ -18,13 +18,14 @@ $ yarn add lint-git-changes --dev
 
 ### Usage
 
-It should be used as a script with [pre-commit](https://github.com/observing/pre-commit).
+It should be used as a script with [husky](https://github.com/typicode/husky) or [pre-commit](https://github.com/observing/pre-commit).
 
 `lint(options)`
 
 #### Options
 
-- `ext` - {String | Array\<string\>}. Files which matched the configured extensions will be lint. Default: `"js"`.
+- `ext` - {String | Array\<String\>}. Files which matched the configured extensions will be lint. Default: `"js"`.
+- `fix` - {Boolean}. Whether fix the codes automatically. Default: `false`.
 
 #### Example
 
@@ -37,12 +38,13 @@ lint({
 ```
 
 package.json
+
+*used with [husky](https://github.com/typicode/husky), please install it first.*
 ```json
 {
   "script": {
-    "lint-changes": "node ./foo.js"
-  },
-  "pre-commit": "lint-changes"
+    "precommit": "node ./foo.js"
+  }
 }
 ```
 
