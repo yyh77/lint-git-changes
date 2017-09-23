@@ -1,17 +1,13 @@
 {
   "name": "lint-git-changes",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Run eslint on changed files in your git repo, before git commit",
   "author": "yyh77 <uv_yyh@163.com>",
   "scripts": {
-    "lint-changes": "node lib/test.js"
-  },
-  "pre-commit": {
-    "run": "lint-changes",
-    "silent": true
+    "precommit": "node lib/test.js"
   },
   "peerDependencies": {
-    "eslint": "^3.0.0"
+    "eslint": ">=3.0.0"
   },
   "devDependencies": {
     "eslint": "^4.1.1",
@@ -20,7 +16,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "pre-commit": "^1.2.2"
+    "husky": "^0.14.3"
   },
   "dependencies": {
     "chalk": "^2.0.1"
