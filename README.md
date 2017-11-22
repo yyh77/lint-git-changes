@@ -26,6 +26,7 @@ It should be used as a script with [husky](https://github.com/typicode/husky) or
 
 - `ext` - {String | Array\<String\>}. Files which matched the configured extensions will be lint. Default: `"js"`.
 - `fix` - {Boolean}. Whether fix the codes automatically. Default: `false`.
+- `dir` - {String}. Choose the directory(relative path to project dir) to lint.
 
 #### Example
 
